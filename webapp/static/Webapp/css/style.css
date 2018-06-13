@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    width: 100%;
+    height: 20px;
+    clear: both;
+    margin: 10px;
+}
+a:hover, .blue-txt{
+    color: #3e83a5;
+}
+.mini-header{
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.banner{
+    min-height: 550px;
+    background: #FFFFFF url("../images") no-repeat center center;
+    background-size: cover;
+}
+.banner .intro h1{
+    font-weight: 800;
+    font-size: 30px;
+}
+.banner-btm{
+    padding-bottom: 10px;
+    position: absolute;
+    left: 50px;
+}
+.banner-btm div{
+    display: block;
+    width: 150px;
+}
+.banner-btm a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.banner-btm a:hover{
+    color: #3e83a5;
+}
+.banner-btm a span{
+    text-align: right;
+    float: right;
+}
+
+
+@media screen and (min-width: 421px) {
+    .banner .intro h1{
+        font-weight: 800;
+    }
+    .banner-btm{
+        padding-bottom: 10px;
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+    }
+    .banner-btm div{
+        display: inline-block;
+        width: 150px;
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (min-width: 721px) {
+    .banner, .about, .approach{
+        position: relative;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .banner .intro{
+        margin-top: 20vh;
+        margin-left: 40px;
+    }
+    .about{
+        background: rgba(86,179,225,0.68) url("../images") no-repeat center center;
+        background-size: cover;
+    }
+    .about .col-sm-3{
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: 0;
+        right: 20vw;
+        padding: 40px;
+    }
+    .approach{
+        max-height: 500px;
+    }
+    .approach .col-md-6{
+        background: transparent;
+        margin: auto;
+        padding: 30px;
+    }
+
+}

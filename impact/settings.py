@@ -46,7 +46,7 @@ ROOT_URLCONF = 'impact.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['webapp/templates/Webapp'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -113,15 +113,15 @@ db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
 
-#STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+# STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "webapp/static"),
+    os.path.join(BASE_DIR, "webapp/static/Webapp/"),
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 MEDIA_URL = '/media/'
 
-#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

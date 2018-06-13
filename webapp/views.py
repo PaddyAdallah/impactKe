@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from .models import Site
 
 
@@ -21,5 +20,3 @@ def about_view(request):
     }
 
     return render(request, "Webapp/about.html", context)
-
-
