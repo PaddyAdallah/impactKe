@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMPACT INTERNATIONAL|{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'webapp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'webapp/css/fontawesome-all.css' %}">
+</head>
+<body class="container-fluid">
+    <div class="mini-banner">
+        {% include 'webapp/includes/navbar.html' %}
+    </div>
+    {% block content %}{% endblock %}
+    <script src="{% static 'webapp/js/bootstrap.js' %}"></script>
+</body>
+</html>

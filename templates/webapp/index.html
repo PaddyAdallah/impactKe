@@ -1,0 +1,177 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMPACT INTERNATIONAL</title>
+    <link rel="stylesheet" href="{% static 'webapp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'webapp/css/fontawesome-all.css' %}">
+</head>
+<body class="container-fluid">
+    <!-- banner -->
+    <div class="banner">
+        {% include 'webapp/includes/navbar.html' %}
+        <div class="col-md-6 intro">
+            <h1>Idea-driven and result-oriented <br/> solutions that connect <br/> brands and
+                experiences.</h1>
+            <p>Our niche in event management, brand building, content creation, talent sourcing, branding and
+                merchandising has etched our name in the communication industry.</p>
+        </div>
+        <div class="banner-btm">
+            <div>
+                <a href="#">GET IN TOUCH <span class="fa fa-long-arrow-alt-right"></span></a>
+            </div>
+            <div>
+                <a href="#">EXPLORE <span class="fa fa-long-arrow-alt-right"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div class="row about">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-3">
+            <p class="mini-header"> Why it matters</p>
+            <h4 class="font-weight-bold">Great for clients, <br/>good for business</h4>
+            <p>We help brands discover their true purpose. Combining strategic thinking, creativity and design to
+                develop transformative ideas and distinctive brand identities.</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- approach -->
+    <div class="container">
+        <div class="row approach">
+            <div class="col-md-6">
+                <div>
+                    <h3 class="font-weight-bold">A smart approach <br/>custom tailored to a firm's brand</h3>
+                    <p>We believe that each event is unique, with its own objectives and challenges. It takes a real
+                        partner to get to know your business, understand your objectives, and design and deliver an event
+                        that will help you achieve your goals.</p>
+                    <p>
+                        <a href="#">LEARN MORE     <span class="fa fa-arrow-right"></span></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ol>
+                    <li class="approach-list">
+                        <div>
+                            <p>Insight <span class="fa fa-arrow-right"></span></p>
+                        </div>
+                    </li>
+                    <li class="approach-list">
+                        <div>
+                            <p>Strategy <span class="fa fa-arrow-right"></span></p>
+                        </div>
+                    </li>
+                    <li class="approach-list">
+                        <div>
+                            <p>Execution <span class="fa fa-arrow-right"></span></p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div class="pre-services"></div>
+    <div class="services">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2>OUR SERVICES</h2>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <span class="fa fa-search"></span>
+                    <h3>EVENTS</h3>
+                    <p>We believe that each is unique, with its own objectives and challenges. It takes a real
+                        partner to get to know your business, understand your objectives and design and deliver an
+                        event that will help you achieve your goals.</p>
+                </div>
+                <div>
+                    <span class="fa fa-rocket"></span>
+                    <h3>CONTENT</h3>
+                    <p>We believe that each is unique, with its own objectives and challenges. It takes a real
+                        partner to get to know your business, understand your objectives and design and deliver an
+                        event that will help you achieve your goals.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <span class="fa fa-bulb"></span>
+                    <h3>BRANDING</h3>
+                    <p>We help brands discover their true purpose. Combining strategic thinking, creativity and
+                        design to develop transformative ideas and distinctive brand identities.</p>
+                </div>
+                <div>
+                    <span class="fa fa-rocket"></span>
+                    <h3>DIGITAL</h3>
+                    <p>We find the place where the human and digital worlds intersect, exploring creative ways to
+                        harness design and technology to help brands have more meaningful conversations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-services">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <p>The Impact team is able to provide a full-service experience that includes:</p>
+                <ul>
+                    <li>Project administration and management</li>
+                    <li>Event Branding and Marketing</li>
+                    <li>Brand Building</li>
+                    <li>Market Strategy</li>
+                    <li>Script Writing</li>
+                    <li>Social Media Management</li>
+                    <li>Digital Media Buying</li>
+                    <li>Events communication and promotion</li>
+                    <li>Print production</li>
+                    <li>Merchandising</li>
+                    <li>Videography</li>
+                    <li>Photography</li>
+                    <li>Casting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- clients -->
+    <div id="clients">
+        <div class="row">
+            <div class="col-md-7"></div>
+            <div class="col-md-5">
+                <div>
+                    <h2>OUR CLIENTS</h2>
+                    <ul>
+                        <li>TAC - The Advertising Company</li>
+                        <li>Kenya Harlequin FC</li>
+                        <li>Scanad</li>
+                        <li>Ogilvy</li>
+                        <li>Microsoft</li>
+                        <li>Dream Catcher</li>
+                        <li>NT Communications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contacts -->
+    <div id="contacts">
+        <div>
+            <h2>CONTACT US</h2>
+            <h4>We'd love to hear from you...</h4>
+            <address>
+                P.O. BOX 44828 - 00100, NAIROBI, KENYA. <br/>
+                TEL: <a href="tel:+254202097585">+254 202097585</a>, <a href="tel:+254208045040"> +254 208045040</a> <br/>
+                MOBILE: <a href="tel:+254722564913">+254 722 564913</a>, <a href="tel:+254737564913">+254 737 564913</a>, <a
+                    href="tel:+254722644213">+254 722 664231</a> <br/>
+                E-MAIL: <a href="mailto:info@impacteastafrica.com">info@impacteastafrica.com</a> <br/>
+                WEBSITE: <a href="www.impacteastafrica.com">www.impacteastafrica.com</a>
+            </address>
+        </div>
+    </div>
+    {% include 'webapp/includes/footer.html' %}
+
+    <script src="{% static 'webapp/js/bootstrap.js' %}"></script>
+</body>
+</html>

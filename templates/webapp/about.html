@@ -1,0 +1,82 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMPACT INTERNATIONAL | ABOUT</title>
+    <link rel="stylesheet" href="{% static 'webapp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'webapp/css/fontawesome-all.css' %}">
+</head>
+<body class="container-fluid">
+    <div class="mini-banner">
+        {% include 'webapp/includes/navbar.html' %}
+    </div>
+    <div class="about">
+        <div class="col-sm-3">
+            <h3 class="font-weight-bold">ABOUT US</h3>
+            <p>We are an idea driven and result oriented agency built to connect brands and experiences. Our niche in
+                event management, brand building, content creation, talent sourcing, branding and merchandising has
+                etched our name in the communication industry.</p>
+        </div>
+    </div>
+    <div class="about-2">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="vsn-msn" id="vision">
+                    <h3>Our Vision</h3>
+                    <p>To be the leading promotion and positioning consultants within East Africa. To be acknowledged
+                        for distinguished service to every client we encounter and every project we undertake.</p>
+                </div>
+                <div class="vsn-msn" id="mission">
+                    <h3>Our Mission</h3>
+                    <p>To provide our clients with quality services that improve their bottom line and increase their
+                        brand worth.</p>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </div>
+    <!-- philosophy -->
+    <div class="philosophy">
+        <div class="row">
+            <div class="col-md-push-6 col-md-6"></div>
+            <div class="col-md-pull-6 col-md-6">
+                <div>
+                    <h2>OUR PHILOSOPHY</h2>
+                    <p>We aim to inspire generations and contribute to a sense of global community with products
+                        that captivate and educate.</p>
+                    <p>Our philosophy is simple: we take brands through a journey... We work hard, do great work and
+                        ultimately make our brand partners happy.</p>
+                    <p>With our years of experience in the field and our range of empowered client, we aim to get
+                        clients the most innovative and multidimensional concepts, expressed through video, audio,
+                        interactive and web, photography, graphic design and events.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- approach  -->
+    <div id="approach">
+        <h2>OUR APPROACH</h2>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <h3>01</h3><h5>Insight</h5>
+                <p>We read the brief. We immerse ourselves in understanding the message we need to convey. We do
+                    research and this is what informs the concept, drives the overarching and determines the medium
+                    we will use.</p>
+                <h3>02</h3><h5>Strategy</h5>
+                <p>We establish the creative treatment and  expand on the primary medium, key emotive touchpoints,
+                    media channels and extensions. Our commitment is to craft a full service of multi-media
+                    solutions that works for the brand and the market.</p>
+                <h3>03</h3><h5>Execution</h5>
+                <p>Every project is defined by a single-minded message. The message is articulated through different
+                    mediums and enforced by different partnerships.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{% static 'webapp/js/bootstrap.js' %}"></script>
+</body>
+</html>
