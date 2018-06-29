@@ -6,7 +6,6 @@ def index_view(request):
     details = Site.objects.all()
 
     context = {
-        "title": "Home",
         "details": details,
     }
 
@@ -17,7 +16,6 @@ def about_view(request):
     details = Site.objects.all()
 
     context = {
-        "title": "About",
         "details": details,
     }
 
