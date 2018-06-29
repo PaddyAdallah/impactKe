@@ -25,7 +25,7 @@ SECRET_KEY = '!tt)k$&j2_*+y^kx_68msm+0gtgl3+2bcgxtm5onnckjslgp9%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'impactke.herokuapp.com']
 
 
 # Application definition
@@ -76,9 +76,17 @@ WSGI_APPLICATION = 'impct.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'impactke',
+        'USER': 'admin',
+        'PASSWORD': 'qwertyuiop',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
