@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42a2848a-00a9-4f3a-93b0-2873b4c96a4e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/impct.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/impact.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impct/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/impact/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impct/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/impact/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impct/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/impact/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/impct/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/impact/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/chardetect" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/chardetect" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/django-admin" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/django-admin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/django-admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-3.5" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/gunicorn" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/gunicorn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/gunicorn_paster" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/gunicorn_paster" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pbr" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pbr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/pip3.5" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3.5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python-config" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python-config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/static" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/static" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/virtualenv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/virtualenv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/wheel" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/wheel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/local/bin/static" beforeDir="false" afterPath="$PROJECT_DIR$/venv/local/bin/static" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/impact/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/impact/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,10 +19,10 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/impact/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="214">
+              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding>
-                <element signature="e#306#315#0" expanded="true" />
+                <element signature="e#307#316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -317,7 +292,7 @@
         <state relative-caret-position="405">
           <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
-            <element signature="e#306#315#0" expanded="true" />
+            <element signature="e#307#316#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -588,10 +563,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/impact/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="214">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
           <folding>
-            <element signature="e#306#315#0" expanded="true" />
+            <element signature="e#307#316#0" expanded="true" />
           </folding>
         </state>
       </provider>

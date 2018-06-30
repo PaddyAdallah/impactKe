@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 import cloudinary
 import dj_database_url
-import psycopg2
+import django_heroku
+# import psycopg2
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!tt)k$&j2_*+y^kx_68msm+0gtgl3+2bcgxtm5onnckjslgp9%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['localhost', 'impactke.herokuapp.com']
 ALLOWED_HOSTS = ['*']
@@ -168,3 +169,6 @@ cloudinary.config(
     api_key="137829138436793",
     api_secret="ckv0xOZgeQdUZcEp8eVmXM2pi0Y"
 )
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
