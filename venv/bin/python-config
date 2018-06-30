@@ -1,4 +1,4 @@
-#!/home/jared/Desktop/projects/impct/venv/bin/python
+#!/home/jared/Desktop/projects/impact/venv/bin/python
 
 import sys
 import getopt
