@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import cloudinary
+import dj_database_url
+import psycopg2
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!tt)k$&j2_*+y^kx_68msm+0gtgl3+2bcgxtm5onnckjslgp9%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 'impactke.herokuapp.com']
 
@@ -38,10 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webapp.apps.WebappConfig',
+    'whitenoise.runserver_nostatic',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -55,8 +61,7 @@ ROOT_URLCONF = 'impct.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,9 +91,23 @@ DATABASES = {
         'USER': 'admin',
         'PASSWORD': 'qwertyuiop',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
+    },
+    'heroku': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd1olaq1e82usbe',
+        'USER': 'lizsexglfgnwgn',
+        'PASSWORD': 'b7111ca4e4d2b431965a287c825ac17446fe1209ef0cf5cd036adcc3d4564f59',
+        'HOST': 'ec2-107-21-103-146.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
+# DATABASE_URL = os.environ['DATABASE_URL']
+#
+# conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+#
+# DATABASES['default', 'heroku'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 
 # Password validation
@@ -130,7 +149,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    'static',
+    os.path.join(BASE_DIR, "static"),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
@@ -138,3 +157,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
+
+cloudinary.config(
+    cloud_name="jaredomamo",
+    api_key="137829138436793",
+    api_secret="ckv0xOZgeQdUZcEp8eVmXM2pi0Y"
+)
