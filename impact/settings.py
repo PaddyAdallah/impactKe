@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'webapp',
     'webapp.apps.WebappConfig',
-    # 'whitenoise.runserver_nostatic',
     'cloudinary',
 ]
 

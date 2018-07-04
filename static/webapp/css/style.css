@@ -102,7 +102,7 @@ a:hover, .blue-txt{
         margin-left: 40px;
     }
     .about{
-        background: rgba(86,179,225,0.68) url("../images") no-repeat center center;
+        background: rgba(86,179,225,0.68) url("../images/biz-background.jpg") no-repeat center center;
         /*background: #FFFFFF url("../images") no-repeat center center;*/
         background-size: cover;
     }
@@ -131,10 +131,11 @@ a:hover, .blue-txt{
         min-height: 60vh;
     }
     .pre-services{
-        background: rgba(86,179,225,0.68) url('../images') no-repeat center;
+        background: rgba(86,179,225,0.68) url('../images/branding.jpg') no-repeat center;
+        background-size: cover;
     }
     .services{
-        background-color: rgba(0,0,0,0.85);
+        background-color: rgba(0,0,0,0.75);
     }
     .services .row:first-child {
         background-color: #FFFFFF;
@@ -172,14 +173,40 @@ a:hover, .blue-txt{
         right: 15vh;
     }
     #contacts{
-        background: rgba(0,0,0,0.85) url('../images') no-repeat center;
+        background: rgba(0,0,0,0.85) url('../images/contactbg.jpg') no-repeat center;
         background-size: cover;
         min-height: 50vh;
-        margin-top: 20vh;
+        margin-top: 10vh;
         padding: 10vh 10vw;
         color: #FFFFFF;
     }
     #contacts div{
+    }
+    /*###################   ABOUT PAGE  #########################*/
+    .about-2{
+        padding: 20px 10px;
+        max-height: 500px;
+    }
+    .about-2 .col-md-6:last-child{
+        padding: 30px 20px;
+        margin-top: 50px;
+    }
+    .philosophy .col-md-6:last-child{
+        margin-top: 15vh;
+    }
+    /*###################   CONTACTS PAGE  #########################*/
+    #contacts-page{
+        background: rgba(0,0,0,0.75) url('../images/contactbg.jpg') no-repeat center;
+        background-size: cover;
+        height: 90vh;
+        color: #FFFFFF;
+    }
+    #contacts-page .col-md-6:first-child{
+        padding: 10vh 5vw;
+    }
+    #contacts-page .col-md-6:last-child{
+        padding-top: 10vh;
+        padding-right: 55px;
     }
 
 }

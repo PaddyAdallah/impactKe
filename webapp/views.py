@@ -14,11 +14,16 @@ def index_view(request):
 
 
 def about_view(request):
-    details = Site.objects.all()
-
     context = {
-        "title": "About",
-        "details": details,
+        "title": "About"
     }
 
     return render(request, "webapp/about.html", context)
+
+
+def contacts_view(request):
+    context = {
+        "title": "Contacts"
+    }
+
+    return render(request, "webapp/contacts.html", context)
