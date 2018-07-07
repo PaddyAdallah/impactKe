@@ -25,5 +25,4 @@ static3==0.7.0
 urllib3==1.22
 virtualenv==16.0.0
 whitenoise==3.3.1
-psycopg2
 django-heroku

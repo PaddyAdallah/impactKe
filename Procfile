@@ -1,1 +1,1 @@
-web: gunicorn impact.wsgi --log-file -
+web: gunicorn impact.wsgi

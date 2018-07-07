@@ -1,0 +1,212 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    width: 100%;
+    height: 20px;
+    clear: both;
+    margin: 10px;
+}
+a:hover, .blue-txt{
+    color: #3e83a5;
+}
+.mini-header{
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.banner{
+    min-height: 550px;
+    background: #c6c8ca url("../images/banner.a0961baaa799.png") no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+.banner .intro, .banner-btm{
+    background-color: rgba(0,0,0,0.3);
+}
+.banner .intro h1{
+    font-weight: 800;
+    font-size: 30px;
+}
+.banner-btm{
+    padding-bottom: 10px;
+    position: absolute;
+    left: 50px;
+}
+.banner-btm div{
+    display: block;
+    width: 150px;
+}
+.banner-btm a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+.banner-btm a:hover{
+    color: #3e83a5;
+}
+.banner-btm a span{
+    text-align: right;
+    float: right;
+}
+
+/* APPROACH */
+.approach .col-md-6{
+    background: transparent;
+    margin: auto;
+    padding: 30px;
+}
+.approach .approach-list{
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.approach .approach-list p{
+    font-weight: 600;
+}
+.approach .approach-list span{
+    float: right;
+}
+
+
+@media screen and (min-width: 421px) {
+    .banner .intro h1{
+        font-weight: 800;
+    }
+    .banner-btm{
+        padding-bottom: 10px;
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+    }
+    .banner-btm div{
+        display: inline-block;
+        width: 150px;
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (min-width: 721px) {
+    .banner, .about, .approach{
+        position: relative;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .banner .intro{
+        margin-top: 20vh;
+        margin-left: 40px;
+    }
+    .about{
+        background: rgba(86,179,225,0.68) url("../images/biz-background.cc0668fe62fb.jpg") no-repeat center center;
+        /*background: #FFFFFF url("../images") no-repeat center center;*/
+        background-size: cover;
+    }
+    /*.about .col-sm-5{*/
+        /*background: url("../images/about.ddc8b39a99d7.png") no-repeat center;*/
+        /*background-size: contain;*/
+        /*position: absolute;*/
+        /*left: 15vw;*/
+        /*top: 20vh;*/
+        /*min-height: 60vh;*/
+        /*min-width: 40vw;*/
+    /*}*/
+    .about .col-sm-3{
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: 0;
+        right: 20vw;
+        padding: 40px;
+    }
+    .approach{
+        max-height: 500px;
+    }
+    /*  SERVICES  */
+    .pre-services, .services{
+        position: relative;
+        min-height: 60vh;
+    }
+    .pre-services{
+        background: rgba(86,179,225,0.68) url("../images/branding.c3578dd7284d.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .services{
+        background-color: rgba(0,0,0,0.75);
+    }
+    .services .row:first-child {
+        background-color: #FFFFFF;
+        position: absolute;
+        overflow: visible;
+        width: 70vw;
+        height: auto;
+        top: -200px;
+        right: 15vw;
+    }
+    .post-services{
+        margin-top: 10vh;
+    }
+    .post-services .col-md-6:first-child{
+        background: #FFFFFF  url("../images/impact-4.dae7130957c1.png") no-repeat center;
+        background-size: contain;
+        min-width: 40vw;
+        height: auto;
+    }
+    #clients{
+        min-height: 70vh;
+        margin-top: 10vh;
+    }
+    #clients .col-md-7:first-child{
+        background: #FFFFFF  url("../images/impact-2.e642b8856f6b.png") no-repeat center;
+        background-size: cover;
+        height: 70vh;
+    }
+    #clients .col-md-5:last-child div{
+        border: 15px rgba(86,179,225,1) solid;
+        width: 400px;
+        padding: 20px;
+        position: absolute;
+        top: 10vh;
+        right: 15vh;
+    }
+    #contacts{
+        background: rgba(0,0,0,0.85) url("../images/contactbg.71957c8c7a07.jpg") no-repeat center;
+        background-size: cover;
+        min-height: 50vh;
+        margin-top: 10vh;
+        padding: 10vh 10vw;
+        color: #FFFFFF;
+    }
+    #contacts div{
+    }
+    /*###################   ABOUT PAGE  #########################*/
+    .about-2{
+        padding: 20px 10px;
+        max-height: 500px;
+    }
+    .about-2 .col-md-6:last-child{
+        padding: 30px 20px;
+        margin-top: 50px;
+    }
+    .philosophy .col-md-6:last-child{
+        margin-top: 15vh;
+    }
+    /*###################   CONTACTS PAGE  #########################*/
+    #contacts-page{
+        background: rgba(0,0,0,0.75) url("../images/contactbg.71957c8c7a07.jpg") no-repeat center;
+        background-size: cover;
+        height: 90vh;
+        color: #FFFFFF;
+    }
+    #contacts-page .col-md-6:first-child{
+        padding: 10vh 5vw;
+    }
+    #contacts-page .col-md-6:last-child{
+        padding-top: 10vh;
+        padding-right: 55px;
+    }
+
+}

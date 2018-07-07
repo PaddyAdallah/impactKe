@@ -14,7 +14,8 @@ import os
 import cloudinary
 import dj_database_url
 import django_heroku
-# import psycopg2
+import cloudinary_storage
+import psycopg2
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -43,9 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-    # 'webapp',
-    'webapp.apps.WebappConfig',
     'cloudinary',
+    'cloudinary_storage',
+    'webapp',
+    # 'webapp.apps.WebappConfig',
 ]
 
 MIDDLEWARE = [
@@ -84,18 +86,18 @@ WSGI_APPLICATION = 'impact.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'impactke',
-        'USER': 'admin',
-        'PASSWORD': 'qwertyuiop',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'impactke',
+    #     'USER': 'admin',
+    #     'PASSWORD': 'qwertyuiop',
+    #     'HOST': 'localhost',
+    #     'PORT': '5432',
+    # },
     'heroku': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd1olaq1e82usbe',
@@ -103,6 +105,7 @@ DATABASES = {
         'PASSWORD': 'b7111ca4e4d2b431965a287c825ac17446fe1209ef0cf5cd036adcc3d4564f59',
         'HOST': 'ec2-107-21-103-146.compute-1.amazonaws.com',
         'PORT': '5432',
+        'SSLMODE': 'require'
     }
 }
 
