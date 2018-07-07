@@ -30,8 +30,8 @@ SECRET_KEY = '!tt)k$&j2_*+y^kx_68msm+0gtgl3+2bcgxtm5onnckjslgp9%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['localhost', 'impactke.herokuapp.com']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', 'impactke.herokuapp.com']
+# ALLOWED_HOSTS = ['*']
 
 
 # Application definition
