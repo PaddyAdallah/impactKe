@@ -1,12 +1,15 @@
-{% load staticfiles %}
-<!DOCTYPE html>
+{% load static %}
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>IMPACT INTERNATIONAL</title>
+<head profile="http://www.w3.org/2005/10/profile">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon"
+      type="image/png"
+      href="{% static 'webapp/images/logo.png' %}">
+    <title>IMPACT INTERNATIONAL|{{ title }}</title>
     <link rel="stylesheet" href="{% static 'webapp/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'webapp/css/fontawesome-all.css' %}">
+{#    <link rel="stylesheet" href="{% static 'webapp/css/fontawesome-all.css' %}">#}
 </head>
 <body class="container-fluid">
     <!-- banner -->
